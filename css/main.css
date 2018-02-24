@@ -103,12 +103,6 @@ button:hover {
 /********* Media Queries ************/
 
 @media (min-width: 854px) {
-  h1,
-  button,
-  h2 {
-
-  }
-
   #container {
     margin-left: 50px;
     margin-right: 50px;
@@ -116,11 +110,6 @@ button:hover {
 }
 
 @media (min-width: 764px) {
-  h1,
-  button,
-  h2 {
-
-  }
   #container {
     margin-left: 20%;
     margin-right: 20%;
