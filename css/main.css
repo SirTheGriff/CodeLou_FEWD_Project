@@ -1,0 +1,135 @@
+/******* Main Styles ********/
+
+body {
+  background: #3E5151;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-width: 370px;
+}
+
+.header {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    letter-spacing: .1rem;
+}
+
+#clicks {
+  font-size: 1.1em;
+}
+
+button {
+ -webkit-border-radius: 13;
+ -moz-border-radius: 13;
+ border-radius: 13px;
+ font-family: Arial;
+ color: #534e56;
+ font-size: 20px;
+ background: #b793d8;
+ padding: 16px 20px 16px 20px;
+ border: solid #24243e 2px;
+ font-size: 1.5em;
+ letter-spacing: .1rem;
+ margin-left: 5%;
+ margin-right: 5%;
+ -webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+ -moz-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+ box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
+
+button:hover {
+  background: #24243e;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+/******* Game Items ***********/
+
+#gameboard {
+  margin: auto auto;
+  min-width: 430px;
+  max-width: 1120px;
+  margin-bottom: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+#container {
+  margin: 2% 2%;
+}
+
+.gamesquare,
+.gameimage {
+  border-radius: 45%;
+  float: left;
+  width: 120px;
+  height: 120px;
+}
+
+.gamesquare {
+  background: #b793d8;
+  /* border: 1px solid black; */
+  -webkit-box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
+  box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
+}
+
+.gameimage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.matchedItem {
+  background-image: none !important;
+}
+
+
+/********* Media Queries ************/
+
+@media (min-width: 854px) {
+  h1,
+  button,
+  h2 {
+
+  }
+
+  #container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 764px) {
+  h1,
+  button,
+  h2 {
+
+  }
+  #container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (min-width: 500px) {
+  #container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
