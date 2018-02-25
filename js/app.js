@@ -169,12 +169,12 @@ container.addEventListener('click', function(event){
         clicked.parentNode.classList.add('selected');
         clicked.classList.remove('gamesquare');
         score += 1;
-        matchEnd += 2;
         }
         if (firstClick && secondClick) {
           if (firstClick === secondClick) {
             setTimeout(matchedCards, delay, removeSpan);
             setTimeout(resetMatch, delay);
+            matchEnd += 2;    
           }
             setTimeout(resetUnmatch, delay);
        }
