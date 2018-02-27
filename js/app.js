@@ -174,11 +174,9 @@ container.addEventListener('click', function(event){
           if (firstClick === secondClick) {
             setTimeout(matchedCards, delay, removeSpan);
             setTimeout(resetMatch, delay);
-<<<<<<< HEAD
             matchEnd += 2;
-=======
-            matchEnd += 2;    
->>>>>>> b1da08f2738c050f827434aa649fb687e5225a95
+            matchEnd += 2;
+
           }
             setTimeout(resetUnmatch, delay);
        }
