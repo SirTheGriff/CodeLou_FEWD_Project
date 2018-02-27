@@ -55,7 +55,6 @@ button:hover {
   text-decoration: none;
 }
 
-
 /******* Game Items ***********/
 
 #gameboard {
@@ -98,7 +97,6 @@ button:hover {
 .matchedItem {
   background-image: none !important;
 }
-
 
 /********* Media Queries ************/
 
