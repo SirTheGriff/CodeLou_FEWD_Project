@@ -150,6 +150,19 @@ pictures.forEach(item => {
   gameCard.appendChild(gameImage);
 });
 
+// ************************************************
+// polyfill template for IE
+//
+// pictures.prototype.forEach = function(item, thisArg){
+//   if(typeof(item) !== "function") {
+//     throw new TypeError(item + " is not a function")
+//   }
+//   var len = pictures.length;
+//   for(var i = 0; i < len; i++) {
+//     item.call(thisArg, this[i]), i, this)
+//   }
+// }
+//*************************************************
 
 container.addEventListener('click', function(event){
     var clicked = event.target;
