@@ -1,3 +1,5 @@
+// Main Variables *****************
+
 var firstClick = "";
 var secondClick = "";
 var score = 0;
@@ -5,6 +7,9 @@ var prevTarget = null;
 var delay = 2000;
 var count = 0;
 var matchEnd = 0;
+
+// Picture Array ******************
+
 var pictures = [{
       'name': 'amadablam',
       'img': 'img/amadablam.jpg',
@@ -135,6 +140,8 @@ var pictures = [{
     }
 ];
 
+// Sort Array and Generate Game Bubbles ******************
+
 pictures.sort(function(a, b){return 0.5 - Math.random()});
 
 var container = document.getElementById("container");
@@ -151,7 +158,7 @@ pictures.forEach(item => {
 });
 
 // ************************************************
-// polyfill template for IE
+// polyfill template for IE for the above forEach
 //
 // pictures.prototype.forEach = function(item, thisArg){
 //   if(typeof(item) !== "function") {
@@ -163,6 +170,9 @@ pictures.forEach(item => {
 //   }
 // }
 //*************************************************
+
+
+// Click Listener and Main Game Functions ***********
 
 container.addEventListener('click', function(event){
     var clicked = event.target;
@@ -196,7 +206,7 @@ container.addEventListener('click', function(event){
      var scoreClicks = document.getElementById("clicks").innerHTML = score;
 });
 
-
+// Functions and Button Reset *******************************
 
 function matchedCards() {
   var matched = document.querySelectorAll(".selected");
@@ -249,7 +259,7 @@ button.addEventListener('click', function(){
 
 
 
-//// Old code below
+////********* Old trial and error code below ****************************
 
 // var cardsNode = document.querySelectorAll(".gameimage")
 // var cardsPlayArray = [];
