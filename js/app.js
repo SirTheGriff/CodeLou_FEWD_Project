@@ -176,12 +176,12 @@ pictures.forEach(item => {
 
 container.addEventListener('click', function(event){
     var clicked = event.target;
-      if (clicked.nodeName === 'DIV' || clicked === prevTarget || clicked.parentNode.classList.contains('selected')
+      if (clicked.nodeName === 'DIV'  || clicked === prevTarget || clicked.parentNode.classList.contains('selected')
             ) {
         return;
       }
       if (count < 2) {
-        count ++;
+          count ++;
         if (count === 1) {
         firstClick = clicked.parentNode.dataset.name;
         clicked.parentNode.classList.add('selected');
@@ -248,7 +248,7 @@ const resetUnmatch = () => {
 function alertEndGame() {
 const endGame = document.getElementsByClassName("matchedItem");
 if (matchEnd === 32) {
-  alert("FANTASTIC! YOU DID IT! Click OK and then RESET to play again.");
+  alert("FANTASTIC! YOU DID IT! Click OK or CLOSE and then RESET above to play again.");
 };
 }
 
