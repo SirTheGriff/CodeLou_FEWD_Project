@@ -64,10 +64,6 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.clearfix {
-    overflow: auto;
-}
-
 #container {
   margin: 2% 2%;
 }
