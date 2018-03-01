@@ -162,9 +162,8 @@ pictures.forEach(item => {
 
 var gameboard = document.getElementById("gameboard");
 
-gameboard.addEventListener('click', function(event) {
+container.addEventListener('click', function(event) {
     var clicked = event.target;
-
       if (clicked.parentNode === gameboard  || clicked === prevTarget  || clicked.parentNode.classList.contains('selected')
             ) {
         return;
