@@ -157,32 +157,21 @@ pictures.forEach(item => {
   gameCard.appendChild(gameImage);
 });
 
-// ************************************************
-// polyfill template for IE for the above forEach
-//
-// pictures.prototype.forEach = function(item, thisArg){
-//   if(typeof(item) !== "function") {
-//     throw new TypeError(item + " is not a function")
-//   }
-//   var len = pictures.length;
-//   for(var i = 0; i < len; i++) {
-//     item.call(thisArg, this[i]), i, this)
-//   }
-// }
-//*************************************************
-
 
 // Click Listener and Main Game Functions ***********
 
-container.addEventListener('click', function(event){
+var gameboard = document.getElementById("gameboard");
+
+gameboard.addEventListener('click', function(event) {
     var clicked = event.target;
-      if (clicked.nodeName === 'DIV'  || clicked === prevTarget || clicked.parentNode.classList.contains('selected')
+
+      if (clicked.parentNode === gameboard  || clicked === prevTarget  || clicked.parentNode.classList.contains('selected')
             ) {
         return;
       }
       if (count < 2) {
           count ++;
-        if (count === 1) {
+        if (count === 1) {  
         firstClick = clicked.parentNode.dataset.name;
         clicked.parentNode.classList.add('selected');
         clicked.classList.remove('gamesquare');
@@ -260,6 +249,22 @@ button.addEventListener('click', function(){
 
 
 ////********* Old trial and error code below ****************************
+
+
+// ************************************************
+// polyfill template for IE for the above forEach
+//
+// pictures.prototype.forEach = function(item, thisArg){
+//   if(typeof(item) !== "function") {
+//     throw new TypeError(item + " is not a function")
+//   }
+//   var len = pictures.length;
+//   for(var i = 0; i < len; i++) {
+//     item.call(thisArg, this[i]), i, this)
+//   }
+// }
+//
+//*************************************************
 
 // var cardsNode = document.querySelectorAll(".gameimage")
 // var cardsPlayArray = [];
