@@ -58,20 +58,20 @@ button:hover {
 /******* Game Items ***********/
 
 #gameboard {
-  margin: auto auto;
   min-width: 430px;
   max-width: 1120px;
-  margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 #container {
-  margin: 2% 2%;
+  margin: 3% auto;
 }
 
 .gamesquare,
 .gameimage {
   border-radius: 45%;
-  float: left;
+  display: flex;
+  display: inline-block;
   width: 125px;
   height: 125px;
 }
@@ -81,12 +81,14 @@ button:hover {
   -webkit-box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
   box-shadow: inset 3px 3px 30px 4px rgba(0,0,0,0.75);
+  postion: absolute:
 }
 
 .gameimage {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 
 .matchedItem {
