@@ -170,7 +170,7 @@ container.addEventListener('click', function(event) {
       }
       if (count < 2) {
           count ++;
-        if (count === 1) {  
+        if (count === 1) {
         firstClick = clicked.parentNode.dataset.name;
         clicked.parentNode.classList.add('selected');
         clicked.classList.remove('gamesquare');
@@ -234,7 +234,6 @@ const resetUnmatch = () => {
 };
 
 function alertEndGame() {
-const endGame = document.getElementsByClassName("matchedItem");
 if (matchEnd === 32) {
   alert("FANTASTIC! YOU DID IT! Click OK or CLOSE and then RESET above to play again.");
 };
