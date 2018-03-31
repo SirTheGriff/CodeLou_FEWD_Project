@@ -12,3 +12,5 @@ All CSS was written by me outside the gradients and shadows. I used uiGradients.
 ## Custom JavaScript Functions
 I used 3 to 4 different sources for some of the JavaScript, either for big ideas or small aspects of the code that I couldn't get to work on my own. However the majority was done by me, trial and error. I left most of the trial and error code at the bottom, commented out, to show the progess and ideas that didn't work.
 
+The game pieces are randomized every time it is loaded or the "reset" button is clicked. Also, the game generates bubbles based on the number in the array. So, if I add or remove images to the image array, the game will adjust accordingly.
+
